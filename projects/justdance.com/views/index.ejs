@@ -1,0 +1,28 @@
+<html hl="ru">
+<head>
+  <meta charset="utf-8" />
+
+  <title> Наш дружный класс</title>
+  <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+  <%- include('blocks/header'); -%>
+  <div id="wrapper">
+    <%-include('blocks/leftCol')-%>
+    <div id="centerCol" class="col">
+      <h1 align="center"> Наш дружный класс! </h1>
+      <p style="margin-left: 3%;">
+        Здесь, на этом сайте вы сможете:
+          <ul style="margin-left: 6%;">
+            <li><a href="/foto">Посмотреть фотографии сайта</a></li>
+            <li><a href="/excursions">Посмотреть наши поездки и экскурсии в разные места</a></li>
+            <li><a href="/shcool">Посмотреть наши праздники и школьные мероприятия</a></li>
+          </ul>
+      </p>
+    </div>
+  <%-include('blocks/rightCol.ejs')-%>
+  </div>
+  <%- include('blocks/footer'); -%>
+  <script type="text/javascript" src="/public/js/modalimg.js"></script>
+</body>
+</html>

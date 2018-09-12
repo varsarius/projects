@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background-image: url('/public/img/background.jpeg');
+}
+
+
+
+
+#header{
+  background-color: #83f5a7;
+}
+
+#header #sub-header{
+  background-color: #83f5a7;
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  display: block;
+}
+#header #sub-header #logo{
+  /*position*/
+  margin-top: 2.5%;
+  font-size: 5em;
+
+  /*gradient*/
+  position: absolute;
+  background: -webkit-linear-gradient(180deg, #FAF23D, #FF0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /*animation*/
+  animation-name: size;
+  animation-duration: 5s;
+  animation-timing-function:  ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes size {
+  0%{
+    font-size: 5em;
+    transform: translate(0%, 0%);
+  }
+  50%{
+    font-size: 4em;
+    transform: translate(14%, 14%);
+  }
+  100%{
+    font-size: 5em;
+    transform: translate(0%, 0%);
+  }
+}
+
+/*novigation*/
+#header nav.dws-menu{
+  width: 100%;
+  min-height: 10%;
+}
+
+#header nav.dws-menu a .fa {
+  display: block;
+  float: left;
+  margin-top: 0;
+  width: 20%;
+  background-color: #888;
+}
+
+#header nav.dws-menu a .fa div{
+  float: left;
+  color: #ffffff;
+  margin-left: 44%;
+  font-size: 1.4em;
+}
+
+#header nav.dws-menu a:hover .fa{
+  background-color: #565656;
+}
+
+#header nav.dws-menu a:hover .fa div{
+  color: #f000f0;
+}
+
+#wrapper{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #151515;
+  margin-top: 15%;
+}

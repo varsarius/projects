@@ -1,0 +1,14 @@
+html{
+    padding: 0;
+    margin: 0;
+    background-image: url(/img/background.jpeg);
+}
+#header{
+  padding: 1%;
+  width: 98%;
+  height: 7%;
+  background-color: #ABABAB;
+  display: block;
+  font-size: 3em;
+  text-align: center;
+}

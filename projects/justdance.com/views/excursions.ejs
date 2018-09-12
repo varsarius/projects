@@ -1,0 +1,22 @@
+<html hl="ru">
+<head>
+  <meta charset="utf-8" />
+
+  <title> Наш дружный класс</title>
+  <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+  <%- include('blocks/header'); -%>
+  <div id="wrapper">
+    <%-include('blocks/leftCol')-%>
+    <div id="centerCol" class="col">
+      <h1 align="center"> Наши экскурсии: </h1>
+      <p align="center"> Мы пока не ездим никуда. </p>
+    </div>
+  <%-include('blocks/rightCol.ejs')-%>
+  </div>
+  <%- include('blocks/footer'); -%>
+
+<script type="text/javascript" src="/public/js/modalimg.js"></script>
+</body>
+</html>
